@@ -1,5 +1,4 @@
-# Data Science Practicum
-#  Predicting Denver Traffic Accidents using machine learning techniques in Python.
+#  Predicting Denver Traffic Accidents using machine learning techniques in Python
 
 ## Project Overview
 
