@@ -10,7 +10,7 @@ In casual conversations and on social media people often mention at least four s
 
 ![Map of the reaffic accidents, 2018](https://github.com/nweakly/MSDSProjectGitHub/blob/master/IndividualAccidents.GIF "Location of traffic accidents in Denver, CO (2018)")
 
-The main source of accidents data for this project is the traffic accident dataset maintained by the City and County of Denver Police Department. It contains data about all accidents with reported damage more than 1ooo dollars or involving fatalities, injuries or evidence of drug or alcohol use for the past 5 years. It is a dynamic dataset, it is updated every workday, including refining information about previously reported incidents. Additional sources of information included data about retail alcohol and recreational marihuana sales in the state of Colorado, monthly employment statistics (as a proxy for population data), weather observations and others.
+The main source of accidents data for this project is the traffic accident dataset maintained by the City and County of Denver Police Department. It contains data about all accidents with reported damage more than 1ooo dollars or involving fatalities, injuries or evidence of drug or alcohol use for the past 5 years. It is a dynamic dataset, it is updated every workday, including refining information about previously reported incidents. When I downloaded it for my project, it contained 164116 observations of 20 variables.  Additional sources of information included data about retail alcohol and recreational marihuana sales in the state of Colorado, monthly employment statistics (as a proxy for population data), weather observations and others.
 
 Due to the scope of the project and the amount of data preprocessing, it was split into several jupyter notebook files with interim results saved as csv files, so each stage of the project can be run independently from others. 
 
@@ -36,6 +36,18 @@ Please see:
 - KMeans Clustering: MSDS692_Clustering.ipynb
 - ANN: MSDS692_Forecasting.ipynb
 - Time Series Analysis: MSDS692_TimeSeries.ipynb
+
+## Conclusions
+
+While this project has not resulted in building a robust predictive model, I think it still provided some important insights into the situation with car accidents in Denver:
+
+- Car accidents in Denver cannot be reliably predicted exclusively based on population growth, alcohol, and recreational marijuana use, or weather conditions. Traffic accidents in Denver are a complex phenomenon that cannot be reduced to stereotypical factors.
+- To increase the predictive power of the models, we need to include other factors (e.g., traffic patterns, fleet characteristics, driver behavior (e.g, estimated by the number of speeding tickets issued), enforcement practices etc.).
+- Need to reevaluate assumptions and include more granular and precise data (e.g., road surface conditions not just weather observations).
+- Not all algorithms are equally suitable for the task (e.g., K-means was only able to pick up day-of-the-week differences), need to use a different approach to clustering.
+- Unexpectedly, time series analysis provided the most precise prediction. I was expecting the neural network to be better suited, but it is most likely can be explained by the choice of independent variables.
+- Note to myself for future projects: building datasets from scratch takes time and might be not the best solution for a time-restricted school project. 
+- In order to improve my python programming skills I used it exclusively throughout the project, otherwise, some particular tasks can be more efficiently accomplished using other DS tools (e.g., time series analysis seems to be easier in R).
 
 # References
 Video presentation for this project: https://www.youtube.com/watch?v=Lj7lx8ZfaRE 
