@@ -31,7 +31,7 @@ Please see:
 
 ### Merging data and preparing for ML:
 - MSDS692_IndividualAccidents.ipynb
-### ML models:
+### ML models  and discussion of the results:
 - Linear Regression: MSDS692_MonthlyAccidents.ipymb
 - KMeans Clustering: MSDS692_Clustering.ipynb
 - ANN: MSDS692_Forecasting.ipynb
